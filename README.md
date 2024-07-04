@@ -41,4 +41,3 @@ The full analysis and visualizations can be found in the Jupyter Notebook `Titan
 ## Contact
 
 If you have any questions or suggestions, feel free to reach out to me at olcesefacundo97@gmail.com.
-```

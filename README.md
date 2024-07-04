@@ -1,4 +1,3 @@
-```markdown
 # Titanic - Exploratory Data Analysis (EDA)
 
 This project performs an Exploratory Data Analysis (EDA) on the Titanic dataset to uncover insights and patterns. The analysis includes data cleaning, feature engineering, visualization, and predictive modeling.

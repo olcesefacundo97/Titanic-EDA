@@ -1,42 +1,64 @@
-# Titanic - Exploratory Data Analysis (EDA)
+# Análisis Exploratorio de Datos del Titanic
 
-This project performs an Exploratory Data Analysis (EDA) on the Titanic dataset to uncover insights and patterns. The analysis includes data cleaning, feature engineering, visualization, and predictive modeling.
+## Introducción
 
-## Key Insights
+El desastre del Titanic es uno de los naufragios más conocidos de la historia. En este proyecto, realizo un análisis exploratorio de datos (EDA) utilizando el famoso dataset del Titanic para descubrir patrones, tendencias y posibles factores que influyeron en la supervivencia de los pasajeros.
 
-- **Age:** Younger passengers had a higher survival rate.
-- **Fare:** Passengers who paid higher fares had a higher chance of survival.
-- **Class:** First-class passengers had a higher survival rate compared to those in second and third class.
-- **Gender:** Women had a higher survival rate compared to men.
+## Objetivos del Proyecto
 
-## Tools and Technologies Used
+1. **Explorar el dataset del Titanic** para entender mejor la estructura de los datos, las variables más relevantes, y las relaciones entre ellas.
+2. **Crear nuevas variables** para enriquecer el análisis.
+3. **Construir modelos predictivos** para predecir la supervivencia de los pasajeros y evaluar su desempeño.
+4. **Visualizar los resultados** de manera clara y atractiva para identificar patrones clave y sacar conclusiones relevantes.
 
-- **Python:** pandas, numpy, seaborn, matplotlib, plotly
-- **Jupyter Notebook**
+## Dataset
 
-## How to Run
+El dataset utilizado es de dominio público y está disponible en Kaggle. Contiene información sobre los pasajeros del Titanic, incluyendo detalles como clase de pasajero, edad, sexo, tarifa pagada, y si sobrevivieron o no.
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/olcesefacundo97/Titanic-EDA.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd Titanic-EDA
-   ```
-3. Install the required packages:
-   ```sh
-   pip install pandas seaborn matplotlib plotly scikit-learn
-   ```
-4. Open the Jupyter Notebook and run the cells:
-   ```sh
-   jupyter notebook Titanic_EDA.ipynb
-   ```
+## Resultados Destacados
 
-## Results
+- **Variables Relevantes**: Las variables `Pclass`, `Sex`, `Age`, y `Fare` mostraron una fuerte correlación con la probabilidad de supervivencia.
+- **Análisis de Familias**: Pasajeros que viajaban solos tenían una menor probabilidad de supervivencia en comparación con aquellos que viajaban en familia.
+- **Modelos Predictivos**: El modelo de regresión logística alcanzó una precisión del XX%, con un buen balance entre precisión y recall.
 
-The full analysis and visualizations can be found in the Jupyter Notebook `Titanic_EDA.ipynb`.
+## Conclusiones
 
-## Contact
+El análisis sugiere que la clase social (`Pclass`) y el sexo (`Sex`) fueron los factores más determinantes en la probabilidad de supervivencia. Este proyecto muestra cómo un análisis exploratorio de datos puede ofrecer insights valiosos a partir de datos históricos.
 
-If you have any questions or suggestions, feel free to reach out to me at olcesefacundo97@gmail.com.
+## Requisitos
+
+- Python 3.x
+- Pandas
+- Seaborn
+- Matplotlib
+- Plotly
+- Scikit-learn
+- Jupyter Notebook (opcional)
+
+## Cómo ejecutar el proyecto
+
+1. Clona el repositorio: 
+    ```sh
+    git clone https://github.com/olcesefacundo97/Titanic-EDA.git
+    ```
+2. Navega al directorio del proyecto:
+    ```sh
+    cd Titanic-EDA
+    ```
+3. Crea y activa un entorno virtual:
+    ```sh
+    python -m venv myenv
+    source myenv/bin/activate  # En Windows usa: myenv\Scripts\activate
+    ```
+4. Instala las dependencias:
+    ```sh
+    pip install -r requirements.txt
+    ```
+5. Ejecuta el análisis:
+    ```sh
+    python titanic_eda.py
+    ```
+
+## Créditos
+
+Este análisis fue realizado por [Facundo Olcese](https://www.linkedin.com/in/olcesefacundo97/).

@@ -40,6 +40,7 @@ Clona el repositorio y ejecuta el archivo `titanic_eda.ipynb`. Asegúrate de ins
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Resultados del Análisis
 - Se identificaron patrones significativos entre variables como la clase del pasajero, el sexo y la edad, con la tasa de supervivencia.

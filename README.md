@@ -1,64 +1,66 @@
-# Análisis Exploratorio de Datos del Titanic
+```markdown
+# Análisis Exploratorio de Datos (EDA) - Titanic Dataset
 
-## Introducción
-
-El desastre del Titanic es uno de los naufragios más conocidos de la historia. En este proyecto, realizo un análisis exploratorio de datos (EDA) utilizando el famoso dataset del Titanic para descubrir patrones, tendencias y posibles factores que influyeron en la supervivencia de los pasajeros.
+## Contexto Histórico
+El RMS Titanic fue un transatlántico británico que se hundió en el Océano Atlántico Norte en las primeras horas del 15 de abril de 1912, después de chocar con un iceberg durante su viaje inaugural desde Southampton, Reino Unido, hasta la ciudad de Nueva York. Este desastre resultó en la muerte de más de 1.500 pasajeros y tripulantes, lo que lo convierte en uno de los desastres marítimos más mortales en tiempos de paz. El análisis de los datos relacionados con los pasajeros del Titanic ofrece una oportunidad para explorar cómo diferentes factores pudieron haber influido en la supervivencia.
 
 ## Objetivos del Proyecto
+- Realizar un análisis exploratorio de datos completo del dataset de pasajeros del Titanic.
+- Visualizar patrones y relaciones entre diferentes variables.
+- Implementar y comparar varios modelos de machine learning para predecir la supervivencia.
 
-1. **Explorar el dataset del Titanic** para entender mejor la estructura de los datos, las variables más relevantes, y las relaciones entre ellas.
-2. **Crear nuevas variables** para enriquecer el análisis.
-3. **Construir modelos predictivos** para predecir la supervivencia de los pasajeros y evaluar su desempeño.
-4. **Visualizar los resultados** de manera clara y atractiva para identificar patrones clave y sacar conclusiones relevantes.
+## Limitaciones del Análisis
+Es importante considerar algunas limitaciones en este análisis:
+- **Sesgo de Muestreo**: Los datos disponibles representan solo a una parte de los pasajeros y pueden no ser completamente representativos de todos los que estuvieron a bordo.
+- **Calidad de los Datos**: Existen valores faltantes y algunas variables categóricas que pueden no haber sido capturadas con precisión.
+- **Suposiciones Simplificadas**: Algunas decisiones en el procesamiento de datos, como la imputación de valores faltantes, se basan en suposiciones que pueden no reflejar la realidad de manera precisa.
 
-## Dataset
-
-El dataset utilizado es de dominio público y está disponible en Kaggle. Contiene información sobre los pasajeros del Titanic, incluyendo detalles como clase de pasajero, edad, sexo, tarifa pagada, y si sobrevivieron o no.
-
-## Resultados Destacados
-
-- **Variables Relevantes**: Las variables `Pclass`, `Sex`, `Age`, y `Fare` mostraron una fuerte correlación con la probabilidad de supervivencia.
-- **Análisis de Familias**: Pasajeros que viajaban solos tenían una menor probabilidad de supervivencia en comparación con aquellos que viajaban en familia.
-- **Modelos Predictivos**: El modelo de regresión logística alcanzó una precisión del XX%, con un buen balance entre precisión y recall.
-
-## Conclusiones
-
-El análisis sugiere que la clase social (`Pclass`) y el sexo (`Sex`) fueron los factores más determinantes en la probabilidad de supervivencia. Este proyecto muestra cómo un análisis exploratorio de datos puede ofrecer insights valiosos a partir de datos históricos.
+## Estructura del Proyecto
+1. **Análisis Exploratorio de Datos (EDA)**:
+    - Limpieza y procesamiento de datos.
+    - Visualización de distribuciones y correlaciones.
+    - Clustering de pasajeros y análisis de interacciones.
+2. **Modelado Predictivo**:
+    - Implementación de modelos de regresión logística, Random Forest, y Gradient Boosting.
+    - Validación cruzada y optimización de hiperparámetros.
+    - Comparación de modelos y evaluación del desempeño.
+3. **Conclusiones y Recomendaciones**:
+    - Discusión de los resultados y consideraciones finales.
 
 ## Requisitos
+Este proyecto utiliza Python y las siguientes bibliotecas:
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- scikit-learn
+- plotly
 
-- Python 3.x
-- Pandas
-- Seaborn
-- Matplotlib
-- Plotly
-- Scikit-learn
-- Jupyter Notebook (opcional)
+## Ejecución del Proyecto
+Clona el repositorio y ejecuta el archivo `titanic_eda.ipynb`. Asegúrate de instalar las dependencias utilizando:
 
-## Cómo ejecutar el proyecto
+```bash
+pip install -r requirements.txt
+```
 
-1. Clona el repositorio: 
-    ```sh
-    git clone https://github.com/olcesefacundo97/Titanic-EDA.git
-    ```
-2. Navega al directorio del proyecto:
-    ```sh
-    cd Titanic-EDA
-    ```
-3. Crea y activa un entorno virtual:
-    ```sh
-    python -m venv myenv
-    source myenv/bin/activate  # En Windows usa: myenv\Scripts\activate
-    ```
-4. Instala las dependencias:
-    ```sh
-    pip install -r requirements.txt
-    ```
-5. Ejecuta el análisis:
-    ```sh
-    python titanic_eda.py
-    ```
+## Resultados del Análisis
+- Se identificaron patrones significativos entre variables como la clase del pasajero, el sexo y la edad, con la tasa de supervivencia.
+- El modelo de **Random Forest** optimizado obtuvo la mejor precisión con validación cruzada.
+- Un análisis contrafactual sugiere que, si todos los pasajeros hubieran estado en primera clase, la tasa de supervivencia podría haber sido mayor.
 
-## Créditos
+## Publicación
+Este proyecto está disponible en Kaggle y GitHub. Siéntete libre de contribuir y realizar mejoras.
 
-Este análisis fue realizado por [Facundo Olcese](https://www.linkedin.com/in/olcesefacundo97/).
+## Contribuciones
+Si deseas contribuir al proyecto, por favor sigue los siguientes pasos:
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature-nueva-caracteristica`).
+3. Realiza los cambios y haz commit (`git commit -m 'Añadir nueva característica'`).
+4. Haz push a la rama (`git push origin feature-nueva-caracteristica`).
+5. Abre un Pull Request.
+
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+```
+
+Este README proporciona una visión completa del proyecto, incluyendo el contexto, objetivos, estructura, y pasos para la ejecución. También se añaden secciones sobre cómo contribuir y la licencia del proyecto, lo que es útil si decides abrir tu trabajo a la comunidad para futuras colaboraciones.

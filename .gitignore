@@ -1,0 +1,21 @@
+# Ignorar archivos temporales de Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Ignorar configuraciones del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar configuraciones de entornos virtuales
+env/
+venv/
+__pycache__/
+*.pyc
+
+# Ignorar configuraciones de IDEs
+.vscode/
+.idea/
+
+# Ignorar archivos de dependencias específicas de Jupyter
+*.nbconvert/
+*.nb.html
+*.nb.py
